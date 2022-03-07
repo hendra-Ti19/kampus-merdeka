@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hendra | Tugas 6 JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="judul">
+            <h2>KALKULATOR</h2>
+        </div>
+        
+        <form action="" id="formulir">
+            <div class="form-group">
+                <label for="angka1">Angka 1</label>
+                <input onfocus="kosong1()" class="" type="text" id="angka1" name="a1" value="Input Angka pertama">
+                <p id="ket1" class="ket"></p>
+            </div>
+            <div class="form-group">    
+                <label for="angka2">Angka 2</label>
+                <input onfocus="kosong2()" class="" type="text" id="angka2" name="a2" value="Input Angka kedua">
+                <p id="ket2" class="ket"></p>
+            </div>
+            <fieldset class="form-group">
+                <legend>Operasi</legend>
+                <input onclick="hitung(this.name)" class="geser1" type="button" value="+" name="tambah">
+                <input onclick="hitung(this.name)" class="geser" type="button" value="-" name="kurang">
+                <input onclick="hitung(this.name)" class="geser" type="button" value="x" name="kali">
+                <input onclick="hitung(this.name)" class="geser" type="button" value="/" name="bagi">
+                <input onclick="hitung(this.name)" class="geser" type="button" value="^" name="pangkat">
+            </fieldset>
+            <div class="form-group">
+                <label for="hasil">Hasil</label>
+                <input type="text" name="hasil" id="hasil" disabled value="0">
+            </div>
+            <div class="form-group">
+                <input onclick="bersih()" type="button" value="Batal" class="btn btn-danger">
+            </div>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
