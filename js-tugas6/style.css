@@ -1,0 +1,87 @@
+.container{
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 50px;
+    position: relative;
+}
+input[type="text"], select, input[type="number"]{
+    width: 100%;
+    border-radius: 5px;
+    height: 18pt;
+    border-color: rgba(128, 128, 128, 0.5);
+}
+.form-group{
+    margin-top: 12pt;
+}
+.btn{
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px;
+}
+.btn-danger{
+    color: white;
+    background-color: rgb(235, 76, 76);
+    border-color: transparent;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.btn-danger:hover{
+    background-color: rgb(201, 40, 40);
+}
+
+
+.judul{
+    background-color: lightseagreen;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#formulir{
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+fieldset{
+    width: 94%;
+    border-radius: 5px;
+}
+fieldset input{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    border :1px solid white;
+    cursor: pointer;
+}
+fieldset input:hover{
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+}
+fieldset .geser{
+    margin-left: 24px;
+}
+fieldset .geser1{
+    margin-left: 5px;
+}
+
+
+.danger{
+    border-color: red !important;
+}
+.ket{
+    font-size: 10pt;
+    margin-top: -.8pt;
+    color: red;
+}
+
+#hasil{
+    height: 50px;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
+}
