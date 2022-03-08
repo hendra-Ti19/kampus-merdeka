@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hendra | Tugas 7 JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="judul">
+            <h2>Informasi Gempa Wilayah Jepang</h2>
+        </div>
+
+        <form action="" id="formulir">
+            <div class="form-group">
+                <p>Update berita 7-8 Maret 2022</p>
+                <p>Sumber Kunjungi : <a href="https://www.data.jma.go.jp/multi/quake/index.html?lang=id" target="_blank">Japan Meteorologial Agency</a></p> <br>
+            </div>
+        <!-- script -->
+        <script>
+            class Gempa {
+                constructor(lokasi, skala) {
+                    this.lokasi = lokasi;
+                    this.skala = skala;
+                }
+                dampak() {
+                    let sk = this.skala;
+                    let kondisi;
+                    if (sk >= 0 && sk <= 2) kondisi = "Tidak terasa";
+                    else if (sk > 2 && sk <= 4) kondisi = "Bangunan retak-retak";
+                    else if (sk > 4 && sk <= 6) kondisi = "Bangunan roboh";
+                    else if (sk > 6) kondisi = "Bangunan roboh dan berpotensi tsunami";
+                    document.write(`
+                    <div class="form-group">
+                        <label>Lokasi gempa</label>
+                        <input class="" type="text" name="a1" value="${this.lokasi}" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label>Skala Kekuatan</label>
+                        <input class="" type="text" name="a1" value="${sk} SR" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label>Dampak yang ditimbulkan</label>
+                        <input class="" type="text" name="a1" value="${kondisi}" disabled>
+                    </div>
+                    <hr>
+                    `
+                    );
+                }
+            }
+            /////////////////////////////////////////////////////////
+            //gunakan construktor class 
+            let data1 = new Gempa('Bagian Tengah Prefektur Yamaguchi', 3.4);
+            let data2 = new Gempa('Lepas Pantai Prefektur Fukushima', 4.0);
+            let data3 = new Gempa('Daerah Noto di Prefektur Ishikawa', 4.8);
+            let data4 = new Gempa('Bagian Selatan Prefektur Chiba', 3.5);
+            let data5 = new Gempa('Daerah Noto di Prefektur Ishikawa', 7);
+            let data6 = new Gempa('Lepas Pantai Tokachi', 1);
+            let data7 = new Gempa('Daerah Noto di Prefektur Ishikawa', 3.5);
+            let data8 = new Gempa('Lepas Pantai Prefektur Miyagi', 4.2);
+            let data9 = new Gempa('Bagian Selatan Pedalaman di Prefektur Akita', 3.4);
+            let data10 = new Gempa('Lepas Pantai Prefektur Miyagi', 3.8);
+            // cetak
+            for(let i=0; i<10; i++){
+            data1.dampak();
+            data2.dampak();
+            data3.dampak();
+            data4.dampak();
+            data5.dampak();
+            data6.dampak();
+            data7.dampak();
+            data8.dampak();
+            data9.dampak();
+            data10.dampak();
+            }
+        </script>
+        <!--  -->
+        </form>
+    </div>
+
+</body>
+
+</html>
