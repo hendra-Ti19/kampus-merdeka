@@ -15,15 +15,29 @@
 
     <div class="container">
         <h3>Klik Tombol Untuk Menampilkan Hewan</h3>
-        <div class="bingkai" id="bingkai">
-            <!-- <img id="cek1" src="img/.jpg" alt=""> -->
+        <div class="bingkai" id="bingkai1">
+            
         </div>
         <div class="tombol">
             <button class="btn" id="ayam">Anak Ayam</button>
+        </div>
+        <div class="bingkai" id="bingkai2">
+
+        </div>
+        <div class="tombol">
             <button class="btn" id="bebek">Bebek</button>
+        </div>
+        <div class="bingkai" id="bingkai3">
+
+        </div>
+        <div class="tombol">
             <button class="btn" id="camar">Burung Camar</button>
+        </div>
+        <div class="bingkai" id="bingkai4">
+
+        </div>
+        <div class="tombol">
             <button class="btn" id="angsa">Angsa</button>
-            <div class="clear"></div>
         </div>
 
         <audio id="audioAyam" src="audio/ayam.mp3" type="audio/mpeg"></audio>
@@ -49,7 +63,7 @@
             var audioAngsa = $("#audioAngsa")[0];
 
             $("#ayam").click(function () {
-                $(".bingkai").css({
+                $("#bingkai1").css({
                     "background-image": "url(img/ayam.jpg)",
                 })
                 audioAyam.play();
@@ -58,7 +72,7 @@
                 audioAngsa.pause();
             })
             $("#bebek").click(function () {
-                $(".bingkai").css({
+                $("#bingkai2").css({
                     "background-image": "url(img/bebek.jpg)",
                 })
                 audioBebek.play();
@@ -67,7 +81,7 @@
                 audioAngsa.pause();
             })
             $("#camar").click(function () {
-                $(".bingkai").css({
+                $("#bingkai3").css({
                     "background-image": "url(img/camar.jpg)",
                 })
                 audioAyam.pause();
@@ -76,7 +90,7 @@
                 audioAngsa.pause();
             })
             $("#angsa").click(function () {
-                $(".bingkai").css({
+                $("#bingkai4").css({
                     "background-image": "url(img/angsa.jpg)",
                 })
                 audioAyam.pause();
@@ -85,7 +99,16 @@
                 audioAngsa.play();
             })
             $("#bersih").click(function () {
-                $(".bingkai").css({
+                $("#bingkai1").css({
+                    "background-image": "none",
+                })
+                $("#bingkai2").css({
+                    "background-image": "none",
+                })
+                $("#bingkai3").css({
+                    "background-image": "none",
+                })
+                $("#bingkai4").css({
                     "background-image": "none",
                 })
                 audioAyam.pause();

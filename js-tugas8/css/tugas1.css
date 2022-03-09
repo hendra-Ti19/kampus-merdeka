@@ -9,7 +9,7 @@
     margin: auto;
     border: 2px solid black;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.301), 0px 0px 10px rgba(0, 0, 0, 0.322);
     background-size : cover;
     border-radius: 20px;
@@ -17,17 +17,18 @@
 .tombol{
     width: 400px;
     margin: auto;
+    text-align: center;
 }
 .clear{
     clear: both;
 }
 .btn{
     height: 40px;
+    width: 200px;
     background-color: lightseagreen;
     border-radius: 10px;
     border: transparent;
-    float: left;
-    margin-left: 25px;
+    margin: auto;
     transition: all 0.2s;
     cursor: pointer;
 }
