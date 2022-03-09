@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ui icon -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <!-- my css -->
+    <link rel="stylesheet" href="css/tugas2.css">
+    <title>Hendra - Tugas8 js</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="judul">NF <span class="sub-judul">Computer</span></h2>
+        <div class="togle">
+            <button class="btn" id="btn-profile">
+                Company Profile
+                <i id="icon1" class="fi fi-rr-angle-down"></i>
+            </button>
+            <div id="isi-profile">
+                <p>
+                    NF COMPUTER adalah bagian dari grup Nurul Fikri yang telah dipercaya oleh masyarakat Indonesia di
+                    bidang pendidikan dan peningkatan sumber daya manusia selama lebih dari 24 tahun. Alumni-alumninya
+                    telah berkiprah dan diakui kualitas kerja dan integritasnya oleh dunia usaha.
+                </p>
+                <p>
+                    NF COMPUTER dirintis sejak tahun 1994 dan merupakan sebuah lembaga di bidang pendidikan dan
+                    pelatihan IT (Information Technology). Kami berkomitmen menjadi partner perusahaan Anda dalam
+                    mengembangkan kemampuan serta keahlian SDM di bidang IT. Dengan komitmen tersebut, kami
+                    mempersiapkan tim pengajar yang professional dan berpengalaman di bidang IT.
+                </p>
+                <p>
+                    Di Era Industri 4.0 saat ini, teknologi informasi berkembang sangat cepat, oleh karena itu
+                    pengembangan sumber daya manusia di bidang IT menjadi sebuah kebutuhan yang perlu diprioritaskan. NF
+                    COMPUTER menjadi jawaban yang tepat atas kebutuhan pengembangan kompetensi IT. Sehingga kami selalu
+                    berusaha untuk terus berinovasi terhadap teknologi terbaru.
+                </p>
+            </div>
+            <button class="btn" id="visi-misi">
+                Visi Misi
+                <i id="icon2" class="fi fi-rr-angle-down"></i>
+            </button>
+            <div id="isi-visi-misi">
+                <dl>
+                    <dt>Visi</dt>
+                    <dd>
+                        Menjadi institusi pelatihan yang kompeten dan profesional di bidang pendidikan teknologi
+                        informasi dan komunikasi di berbagai wilayah indonesia.
+                    </dd>
+                    <dt>Misi</dt>
+                    <dd>
+                        Membangun, memelihara dan mengembangkan institusi pelatihan bisnis berdaya saing tinggi,
+                        berkarakter profesional, kompeten, mengedepankan integritas dan tanggung jawab sosial, dengan
+                        mengembangkan dan menyediakan produk produk pendidikan dan pelatihan teknologi informasi dan
+                        komunikasi prima.
+                    </dd>
+                </dl>
+            </div>
+            <button class="btn" id="deskripsi-bisnis">
+                Deskripsi Bisnis
+                <i id="icon3" class="fi fi-rr-angle-down"></i>
+            </button>
+            <div id="isi-deskripsi-bisnis">
+                <p>
+                    NF COMPUTER menyelenggarakan Pelatihan dan Pendidikan di bidang Teknologi Informasi dan Komunikasi
+                    (IT Training) yang dibagi menjadi lima produk.
+                </p>
+                <p>
+                    Pelatihan (training) ini dibagi dalam beberapa kategori produk yaitu :
+                </p>
+                <ul>
+                    <li>
+                        Public Class, merupakan short course bidang TIK (Teknologi Informasi dan Komunikasi) yang
+                        berbasis Linux maupun Windows.
+                    </li>
+                    <li>
+                        Exclusive Class, merupakan paket training yang diberikan kepada customer dengan durasi 6-8 jam
+                        perhari dengan jumlah peserta minimal 2 orang dan pelaksanaan pelatihannya di NF Computer.
+                    </li>
+                    <li>
+                        In House/In Company Training, yaitu pelatihan TIK yang dikustomisasi untuk kebutuhan
+                        perusahaan-perusahaan
+                    </li>
+                </ul>
+                <p>
+                    Paket bisnis khusus dibagi ke dalam beberapa kategori produk yang dikelola secara profesional oleh
+                    NF COMPUTER yaitu :
+                </p>
+                <ul>
+                    <li>
+                        Kerjasama Pendidikan Sekolah, yaitu Divisi khusus pendidikan sekolah dimana NF COMPUTER
+                        bekerjasama dalam hal : Kerjasama pembangunan Lab Komputer, Pengajaran Komputer dan kombinasi
+                        antara keduanya.
+                    </li>
+                    <li>
+                        Usulan Produk lain: Produk-produk yang menurut lokasi diminati oleh pasar tapi belum ada dalam
+                        daftar produk pelatihan dan pendidikan NF COMPUTER, dapat diajukan oleh cabang untuk menjadi
+                        produk yang dipertimbangkan sebagai produk dan akan menjadi bagian dari penyelenggaraan
+                        pelatiahan dan pendidikan di cabang tersebut pada periode yang dianggap tepat oleh NF COMPUTER.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script>
+        $("document").ready(function () {
+            $("#btn-profile").click(function () {
+                $("#isi-profile").slideToggle("slow");
+                $("#icon1").toggleClass("fi fi-rr-angle-up");
+            })
+            $("#visi-misi").click(function () {
+                $("#isi-visi-misi").slideToggle("slow");
+                $("#icon2").toggleClass("fi fi-rr-angle-up");
+            })
+            $("#deskripsi-bisnis").click(function () {
+                $("#isi-deskripsi-bisnis").slideToggle("slow");
+                $("#icon3").toggleClass("fi fi-rr-angle-up");
+            })
+        })
+    </script>
+</body>
+
+</html>
