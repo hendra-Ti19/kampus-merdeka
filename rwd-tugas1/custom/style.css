@@ -1,0 +1,67 @@
+.btn-grad {
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)
+}
+.btn-grad {
+    height: 35px;
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.6s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+.btn{
+    padding: 0px 15px !important;
+}
+
+.nav-search{
+    height: 35px;
+    margin:  auto;
+}
+
+
+.body{
+    padding-top: 20px;
+}
+
+.table{
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.3);
+    border-radius: 5px;
+}
+@media (max-width: 768px){ 
+    .table{
+        margin-top: 20px;
+    }
+    .konten{
+        margin-top: 20px;
+    }
+ }
+
+.konten{
+    border-radius: 5px;
+}
+
+.breadcrumb p{
+    text-align: center !important;
+    width: fit-content;
+    margin: auto;
+}
+
+#tabs{
+    border: transparent;
+}
+.konten #tabs .nav .nav-item{
+    border: transparent !important;
+    background-color: rgb(120,170,209);
+    margin: 4px;
+    border-radius: 4px;
+}
